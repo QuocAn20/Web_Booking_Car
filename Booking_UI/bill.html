@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Corona Homestay</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bill.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="dist/demo.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
+</head>
+
+<body>
+    <header class="tm-header">
+        <div class="container">
+            <a href="login.html" style="color: red;">Login</a> |
+            <a href="index.html" style="color: white;">Logout</a>
+        </div>
+        <img class="tm-logo" src="images/logoHomestay.png" alt="Corona Homestay">
+        <nav class="tm-nav">
+            <div>
+                <ul>
+                    <li class="tm-list"><a href="index.html">Home</a></li>
+                    <li class="tm-list"><a href="explore.html">Explore </a></li>
+                    <li class="tm-list"><a href="rooms.html">Rooms</a></li>
+                    <li class="tm-list"><a href="bb.html">Booking</a></li>
+                    <li class="tm-list"><a href="bill.html">Bill</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <h1>Bill</h1>
+        <div id="calculator">
+
+            <section class="tm-servicesection">
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Customer</p>
+                        <a id="customer"></a>
+                        
+                    </div>
+                </div>
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Start Date</p>
+                        <a id="startDate"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tm-servicesection">
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Phone Number</p>
+                        <a id="phoneNumber"></a>
+                    </div>
+                </div>
+                <div class="tm-service">
+                    <div>
+                        <p class="b">End Date</p>
+                        <a id="endDate"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tm-servicesection">
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Room</p>
+                        <table>
+                            <tr>
+                                <td><a id="room1"></a></td>
+                                <td><a id="room1Price"></td>
+                            </tr>
+                            <tr>
+                                <td><a id="room2"></a></td>
+                                <td><a id="room2Price"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Date</p>
+                        <a id="date"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tm-servicesection">
+                <div class="tm-service">
+                    <div>
+                        <p class="b">Service</p>
+                        <table>
+                            <tr>
+                                <td><a id="service1"></a></a></td>
+                                <td><a id="service1Price"></td>
+                            </tr>
+                            <tr>
+                                <td><a id="service2"></a></a></td>
+                                <td><a id="service2Price"></td>
+                            </tr>
+                            <tr>
+                                <td><a id="service3"></a></a></a></td>
+                                <td><a id="service3Price"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tm-service">
+                    <div>
+                        <p class="b">TranSport</p>
+                        <table>
+                            <tr>
+                                <td><a id="transport1"></a></td>
+                                <td><a id="transport1Price"></td>
+                            </tr>
+                            <tr>
+                                <td><a id="transport2"></a></td>
+                                <td><a id="transport2Price"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <button style="margin-left: 800px; background-color: green;" onclick="setDomain()">Get Service</button>
+            <button type="button" id="calculate">Total</button>
+
+        </div>
+        <div id="total">
+            <sup>$</sup><span id="money">0.00</span>           
+        </div>
+    </div>
+
+</body>
+
+</html>
